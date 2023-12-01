@@ -55,7 +55,7 @@ Our final project will look like a payload delivery system shooting out random o
 * Screws 
 * Bolts, nuts and washers. 
 * Laser cut acrylic 
-* OLED screen, Pico, wires, Accelerometer, gyroscope, Ect…
+* Pico, wires, Accelerometer, gyroscope, Etc…
 * The outdoors 
 
 ## What do we still need to learn?
