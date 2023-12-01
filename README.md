@@ -7,16 +7,15 @@
 
 &nbsp;
 ## Planning
+"Payload delivery system"
 
-Planning Document 
-Payload delivery system: 
-
-What is the purpose? 
+## What is the purpose? 
 To create a machine by using two long arms to create tension on ropes connected to a "bowstring" - when released, the tension would launch the projectile at the target.
-Why do we want to do this? 
+
+## Why do we want to do this? 
 The purpose is to launch several objects out of the payload delivery system and see the variations of speed from all of the objects. This will help us to see what we need to send through the payload delivery system when doing a specific task. 
 
-Iterations of versions of your plan: 
+## Iterations of versions of the plan: 
 Images: 
 
 Image 1: 
@@ -29,10 +28,11 @@ This is showing what a standstill payload could potentially look like for our gr
 
 
 
-Videos: link 1, link 2, link 3 
+## Videos: 
+link 1, link 2, link 3 
 All of these imported videos show step by step instructions to help create and produce our payload delivery system. They include ( Planning documents, hands on work, and the final product.) 
 The videos also go through on how to create objects we could potentially create for our project. 
-Diagrams: 
+## Diagrams: 
 
 This image shows all the essential components of what we need to create our payload delivery system from the slide posts to support the beams that hold the arms for the string. To the base that holds up the entirety of the machine.
 
@@ -41,29 +41,29 @@ Link to onshape document:
 Onshape document: link 
 Link to payload delivery system: Link
 
-How will your final product function ? 
+## How will your final product function ? 
 Our final project will look like a payload delivery system shooting out random objects at random angles at random targets displaying the launch angle & velocity of the object. Built to the scale of our choosing. 
 
-What materials will you need and how much?  
-Wood 
-3d printed material 
-Precision cut metal pieces 
-String (thick and thin) 
-Screws 
-Bolts, nuts and washers. 
-Laser cut acrylic 
-OLED screen, Pico, wires, Accelerometer, gyroscope, Ect…
-The outdoors 
+## What materials will you need and how much?  
+* Wood 
+* 3d printed material 
+* Precision cut metal pieces 
+* String (thick and thin) 
+* Screws 
+* Bolts, nuts and washers. 
+* Laser cut acrylic 
+* OLED screen, Pico, wires, Accelerometer, gyroscope, Ect…
+* The outdoors 
 
-What do you still need to learn for your project?
+## What do you still need to learn for your project?
 How to code to produce launch angles and how to produce speeds. In addition, we will need to learn how to collaborate with each other and become partners. Work well together doing equal levels of work. And how to build our payload delivery system. 
 
 
-What is the definition for "success" in your project? Don't forget to include safety concerns and your countermeasures for them. 
-To get the payload delivery system to launch various objects 
-To get the pico to collect data on the launch angles and the speeds of the various objects
-To be able to move the payload delivery system from place to place with ease
-Make the payload delivery system spin and shoot at different angles of height. 
+## What is the definition for "success" in your project? Don't forget to include safety concerns and your countermeasures for them. 
+* To get the payload delivery system to launch various objects 
+* To get the pico to collect data on the launch angles and the speeds of the various objects
+* To be able to move the payload delivery system from place to place with ease
+* Make the payload delivery system spin and shoot at different angles of height. 
 
 
 
