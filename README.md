@@ -29,7 +29,10 @@ This is showing what a standstill payload could potentially look like for our gr
 
 
 ## Videos: 
-link 1, link 2, link 3 
+[The Document](https://cvilleschools.onshape.com/documents/10d04d2debd7d212193e0f8b/w/5f46309fe2128ba9bdd94b0e/e/6d990296233ee75fd945af9d)
+
+link 2
+link 3 
 All of these imported videos show step by step instructions to help create and produce our payload delivery system. They include ( Planning documents, hands on work, and the final product.) 
 The videos also go through on how to create objects we could potentially create for our project. 
 ## Diagrams: 
