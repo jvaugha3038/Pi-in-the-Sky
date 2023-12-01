@@ -15,7 +15,7 @@ To create a machine by using two long arms to create tension on ropes connected 
 ## Why do we want to do this? 
 The purpose is to launch several objects out of the payload delivery system and see the variations of speed from all of the objects. This will help us to see what we need to send through the payload delivery system when doing a specific task. 
 
-## Iterations of versions of the plan: 
+## Iterations of the plan: 
 Images: 
 
 Image 1: 
@@ -33,8 +33,8 @@ This is showing what a standstill payload could potentially look like for our gr
 
 link 2
 link 3 
-All of these imported videos show step by step instructions to help create and produce our payload delivery system. They include ( Planning documents, hands on work, and the final product.) 
-The videos also go through on how to create objects we could potentially create for our project. 
+All of these imported videos show step-by-step instructions to help create and produce our payload delivery system. They include ( Planning documents, hands on work, and the final product.) 
+The videos also go through how to create objects we could potentially create for our project. 
 ## Diagrams: 
 
 This image shows all the essential components of what we need to create our payload delivery system from the slide posts to support the beams that hold the arms for the string. To the base that holds up the entirety of the machine.
