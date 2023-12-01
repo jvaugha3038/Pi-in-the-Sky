@@ -7,7 +7,7 @@
 
 &nbsp;
 ## Planning
-"Payload delivery system"
+"Payload delivery system".
 
 ## What is the purpose? 
 To create a machine by using two long arms to create tension on ropes connected to a "bowstring" - when released, the tension would launch the projectile at the target.
