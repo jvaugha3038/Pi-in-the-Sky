@@ -29,10 +29,10 @@ This is showing what a standstill payload could potentially look like for our gr
 
 
 ## Videos: 
-[The Document](https://cvilleschools.onshape.com/documents/10d04d2debd7d212193e0f8b/w/5f46309fe2128ba9bdd94b0e/e/6d990296233ee75fd945af9d)
+1:
+2:
+3:
 
-link 2
-link 3 
 All of these imported videos show step-by-step instructions to help create and produce our payload delivery system. They include ( Planning documents, hands on work, and the final product.) 
 The videos also go through how to create objects we could potentially create for our project. 
 ## Diagrams: 
@@ -41,8 +41,8 @@ This image shows all the essential components of what we need to create our payl
 
 This is an additional derailed image that shows what we plan to create and build on our payload delivery system. Showing the slider that holds the payloads and the levers that release the payloads to get the launch angles.
 Link to onshape document: 
-Onshape document: link 
-Link to payload delivery system: Link
+Onshape document:[The Document](https://cvilleschools.onshape.com/documents/10d04d2debd7d212193e0f8b/w/5f46309fe2128ba9bdd94b0e/e/6d990296233ee75fd945af9d)
+Link to payload delivery system: [Link for website](https://www.pitsco.com/Project_Kits/Torsion-Ballista)
 
 ## How will the final product function? 
 Our final project will look like a payload delivery system shooting out random objects at random angles at random targets displaying the launch angle & velocity of the object. Built to the scale of our choosing. 
