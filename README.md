@@ -41,10 +41,10 @@ Link to onshape document:
 Onshape document: link 
 Link to payload delivery system: Link
 
-## How will your final product function ? 
+## How will the final product function? 
 Our final project will look like a payload delivery system shooting out random objects at random angles at random targets displaying the launch angle & velocity of the object. Built to the scale of our choosing. 
 
-## What materials will you need and how much?  
+## What materials will we need and how much?  
 * Wood 
 * 3d printed material 
 * Precision cut metal pieces 
@@ -55,11 +55,11 @@ Our final project will look like a payload delivery system shooting out random o
 * OLED screen, Pico, wires, Accelerometer, gyroscope, Ect…
 * The outdoors 
 
-## What do you still need to learn for your project?
+## What do we still need to learn?
 How to code to produce launch angles and how to produce speeds. In addition, we will need to learn how to collaborate with each other and become partners. Work well together doing equal levels of work. And how to build our payload delivery system. 
 
 
-## What is the definition for "success" in your project? Don't forget to include safety concerns and your countermeasures for them. 
+## What is the end goal?
 * To get the payload delivery system to launch various objects 
 * To get the pico to collect data on the launch angles and the speeds of the various objects
 * To be able to move the payload delivery system from place to place with ease
