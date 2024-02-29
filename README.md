@@ -9,3 +9,12 @@
 ## Planning
 [Link to planning Document](https://docs.google.com/document/d/14-PHrZZvjooZSPuYYvAT_kGfdMwqDnR2ftNQUhQHIGQ/edit)
 
+## Coding
+
+
+## Wiring
+
+
+## Building A Prototype
+
+
