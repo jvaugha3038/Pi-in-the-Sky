@@ -58,7 +58,8 @@ I also wanted to keep track of the height the payload was at, but the altimeter 
 ```python
         acc = mpu.acceleration
         h = mpl.altitude #shorter variables
-        print("X = ["+str(acc[0])+"]| Y = ["+str(acc[1])+"]| Z = ["+str(acc[2])+"]| ANGLE = ["+str(deg)+"]") #prints acceleration values using the archaic str() method
+        print("X = ["+str(acc[0])+"]| Y = ["+str(acc[1])+"]| Z = ["+str(acc[2])+"]| ANGLE = ["+str(deg)+"]")
+        #prints acceleration values using the archaic str() method
         if acc[2] <= 0:
             red.value = True #if number small light go
             tilt=1
