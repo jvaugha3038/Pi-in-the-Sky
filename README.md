@@ -17,7 +17,7 @@ The plans changed quite frequently, as we found some designs better than others,
 # `Coding`
 The main idea for our design was partially based on the fact that neither of us either excelled at code or wanted to be the one to write it all, so we made sure the code was almost entirely comprised of things we knew how to do. I'll go through it in chunks.
 
-```python:
+```python
 #type:ignore
 
 import adafruit_mpu6050
@@ -42,7 +42,7 @@ deg=0
 ```
 All of this is just the imports and Pico pin setup, aptly titled "the setup soup". I'll only refer to it as such from now on. The "#type:ignore" is just so it doesn't spit out problems that don't actually exist, because otherwise it complained about every single import despite it all working fine.
 
-```python:
+```python
 with open("/data.csv", "a") as datalog: #the thing that allows the data to be Grabbed
     while True: #the Loop
 ```
