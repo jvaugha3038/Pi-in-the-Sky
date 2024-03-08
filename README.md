@@ -54,7 +54,7 @@ These two lines open up an excel sheet named data.csv, which is where all of the
 ```
 These two lines caused a lot of pain. The idea is that every time the code runs through the loop, it sets the previous degrees variable to what the degrees variable was the last time, to store it. The new angle, which would be the difference between the current angle and the previous angle, is then calculated and added to the previous one. This SHOULD create an accurate way to keep track of the angle. However, since the gyroscope measures angle in radians per second, we have to convert it to static degrees. Thats what the 180/pi, and the 0.2 (the time it SHOULD take to loop once) are for. As evidenced by my use of the word SHOULD, it did not do this. Despite having done this exact code in a project from last year (i even copied the code), it just didn't work for reasons I would discover later.(later pending)
 
-I also wanted to keep track of the height the payload was at, but the altimeter cause a lot of wiring and code pain and output horribly inconsistent numbers, so I scrapped it to save my sanity.
+I also wanted to keep track of the height the payload was at, but the altimeter caused a lot of wiring and code pain and output horribly inconsistent numbers, so I scrapped it to save my sanity.
 
 ```python
         acc = mpu.acceleration
