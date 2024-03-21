@@ -68,7 +68,7 @@ I also wanted to keep track of the height the payload was at, but the altimeter 
             red.value = False #if number big light no
             tilt=0
 ```
-THe first two lines just shorten the two sensors (the latter of which is obsolete now) into tiny variables for readability. The third line prints out all of the sensor variables for testing. The lines below simply light up an LED when its tilted sideways, which is a remnant of my older code that this is based on. I'm considering removing the LED and keeping the variable itself.
+THe first two lines just shorten the two sensors (the latter of which is obsolete now) into tiny variables for readability. The third line prints out all of the sensor variables for testing. The lines below simply light up an LED when its tilted sideways, which is a remnant of my older code that this is based on. I'm considering removing the LED and keeping just the variable itself.
 
 ```python
         t=time.monotonic()
@@ -78,7 +78,7 @@ THe first two lines just shorten the two sensors (the latter of which is obsolet
         datalog.flush()
         led.value = False 
 ```
-The final chunk starts with another shorthand variable, which I've already talked about. THe second line is the line that takes all of the important output variables and copies them into the excel sheet from earlier. Then, it blinks the Pico's onboard LED for a specific amount of time, and then the loop repeats.
+The final chunk starts with another shorthand variable, which I've already talked about. The second line is the line that takes all of the important output variables and copies them into the excel sheet from earlier. Then, it blinks the Pico's onboard LED for a specific amount of time, and then the loop repeats.
 
 The final code file itself may end up looking different from this breakdown (more polished, probably,) but this is how the code works, regardless of how it looks later.
 
@@ -86,5 +86,9 @@ The final code file itself may end up looking different from this breakdown (mor
 
 
 # `Building A Prototype`
+The first part we (re)designed was the base, which was definitely the easiest part since it's designed to be built out of mostly wood.
+![image](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/e58101b2-1f77-4f62-8a5f-f6f8bbc4f855)
+
+The gold colored part in the middle (dubbed the "holder") is the only 3D-printed part, and the pole is metal. Everything else is wood, meaning that I didn't have to offset any of the slots that will connect them since we'll cut and sand them manually (probably), and we also likely wont need screws because the friction fits should be strong enough. The pole has space to rotate so we can turn the whole thingy without picking it up (and because Troy wanted to be able to control it like a machine gun turret, which is awesome)
 
 
