@@ -83,7 +83,15 @@ The final chunk starts with another shorthand variable, which I've already talke
 The final code file itself may end up looking different from this breakdown (more polished, probably,) but this is how the code works, regardless of how it looks later.
 
 # `Wiring`
+The initial wiring consisted of an LED, a switch, the battery, the gyroscope/accelerometer, and the altimeter. Then I cut the altimeter out because I anticipated that I would have gone insane trying to wire all of this together on the far-too-small PiCowbell, which is what we had to use. Despite my precautions, I still lost my mind. 
 
+## `Soldering`
+This subsection exists because I made one fatal error that would then waste almost two weeks of time; daring to be one of the first people in the class to solder headers onto the PiCowbell, instead of waiting for someone else to do it correctly and learning off of them. The PiCowbell is essentially a more compact and practical prototype shield, but it required soldering wires onto it as opposed to using jumper wires. My mistake was soldering headers onto nearly every pin in the workspace in the middle of the board, which, plus the power and ground sections as well as the ~40 headers that would connect the Pico to the PiCowbell, led to over 100 pins to solder and hours of sadness. Most of it was mindless busywork until I was then told that I didn't need to do all of that, because I could've just soldered wires straight onto the board.
+![pain](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/21ddf961-2ba0-49b7-b36b-ea1d211d4dac)
+*Soldering normally is tedious. Soldering this many times is aggravating. Soldering this many times and then being told it was unnecessary is painful.*
+
+## `Wiring, again`
+Despite the trauma of wasted time and effort, I tried to rescue this stupid PiCowbell in order to not have to solder anything ever again. The benefit of having all of these headers was
 
 # `Building A Prototype`
 The first part we (re)designed was the base, which was definitely the easiest part since it's designed to be built out of mostly wood.
