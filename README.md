@@ -21,26 +21,56 @@ The main idea for our design was partially based on the fact that neither of us 
 #type:ignore
 
 import adafruit_mpu6050
-import adafruit_mpl3115a2
 import busio
 import time
 import board
-from digitalio import DigitalInOut, Direction
+from digitalio import DigitalInOut, Direction #import soup
 
 led = DigitalInOut(board.LED)
-led.direction = Direction.OUTPUT
-red = DigitalInOut(board.GP16)
-red.direction = Direction.OUTPUT 
+led.direction = Direction.OUTPUT #setting up onboard led
+purp = DigitalInOut(board.GP16)
+purp.direction = Direction.OUTPUT #setting up tilt light
 
 sda_pin = board.GP14
 scl_pin = board.GP15
 i2c = busio.I2C(scl_pin, sda_pin)
-mpu = adafruit_mpu6050.MPU6050(i2c, address=0x68) 
-#the setup soup
+mpu = adafruit_mpu6050.MPU6050(i2c, address=0x68) #setting up the i2c device (gyro/accelerometer)
+
 prev=0
 deg=0
+s=0.2 #set time to wait between data saves
+#the setup soup is now over
 ```
 All of this is just the imports and Pico pin setup, aptly titled "the setup soup". I'll only refer to it as such from now on. The "#type:ignore" is just so it doesn't spit out problems that don't actually exist, because otherwise it complains about every single import despite it all working fine.
+
+```python
+def data(s): #function that grabs data
+    global prev
+    global deg
+    global acc
+```
+The data processing is in a function separate from the data saving loop, in order to speed up the code and make it easier to read. These global variables exist so the code remembers to grab these numbers instead of the irrelevant ones defined outside of the function.
+
+```python
+    prev = deg
+    deg=(round(float(mpu.gyro[0] + 0.08), 1)*(s)*(180/3.14159))+prev #converting radians/second into just degrees
+```
+These two lines caused a lot of pain. The idea is that every time the code runs through the loop, it sets the previous degrees variable to what the degrees variable was the last time, to store it. The new angle, which would be the difference between the current angle and the previous angle, is then calculated and added to the previous one. This SHOULD create an accurate way to keep track of the angle. However, since the gyroscope measures angle in radians per second, we have to convert it to static degrees. Thats what the 180/pi, and the 0.2 (the time it SHOULD take to loop once) are for. As evidenced by my use of the word SHOULD, it did not do this. Despite having done this exact code in a project from last year (i even copied the code), it just didn't work, so I benched the code for a bit to work on other things. Turns out that the problem was that the gyroscope had to be calibrated, which is what that 0.08 is for. When it's flat on the table, it reads something close to -0.08 rad/s, so that offset negates it, and then it's all rounded so the angle is correctly said to not be changing when the device isn't moving.
+
+I also wanted to keep track of the height the payload was at, but the altimeter caused a lot of wiring and code pain and output horribly inconsistent numbers (which would require knowing the sea level at all times to be fully accurate), so I scrapped it to save my sanity.
+
+```python
+    acc = mpu.acceleration
+    print("X = ["+str(acc[0])+"]| Y = ["+str(acc[1])+"]| Z = ["+str(acc[2])+"]| ANGLE = ["+str(deg)+"]")
+    #prints acceleration values using the archaic str() method
+    if acc[2] <= 0:
+        purp.value = True #if number small light go
+        tilt=1
+    else:
+        purp.value = False #if number big light no
+        tilt=0
+```
+The first line just shortens the sensor name into a tiny variable for readability. The third line prints out all of the sensor variables for testing. The lines below simply light up an LED when its tilted sideways, which is a remnant of my older code that this is based on. I considered removing the LED and keeping just the variable itself, until I noticed that it was purple and I think its cool enough to keep.
 
 ```python
 with open("/data.csv", "a") as datalog: #the thing that allows the data to be Grabbed
@@ -49,28 +79,7 @@ with open("/data.csv", "a") as datalog: #the thing that allows the data to be Gr
 These two lines open up an excel sheet named data.csv, which is where all of the outputs will go, and also set up The Loop, which is the rest of the code.
 
 ```python
-        prev = deg
-        deg=(round(float(mpu.gyro[0]), 1)*(0.2)*(180/3.14159))+prev #converting radians/second into just degrees
-```
-These two lines caused a lot of pain. The idea is that every time the code runs through the loop, it sets the previous degrees variable to what the degrees variable was the last time, to store it. The new angle, which would be the difference between the current angle and the previous angle, is then calculated and added to the previous one. This SHOULD create an accurate way to keep track of the angle. However, since the gyroscope measures angle in radians per second, we have to convert it to static degrees. Thats what the 180/pi, and the 0.2 (the time it SHOULD take to loop once) are for. As evidenced by my use of the word SHOULD, it did not do this. Despite having done this exact code in a project from last year (i even copied the code), it just didn't work for reasons I would discover later.(later pending)
-
-I also wanted to keep track of the height the payload was at, but the altimeter caused a lot of wiring and code pain and output horribly inconsistent numbers, so I scrapped it to save my sanity.
-
-```python
-        acc = mpu.acceleration
-        h = mpl.altitude #shorter variables
-        print("X = ["+str(acc[0])+"]| Y = ["+str(acc[1])+"]| Z = ["+str(acc[2])+"]| ANGLE = ["+str(deg)+"]")
-        #prints acceleration values using the archaic str() method
-        if acc[2] <= 0:
-            red.value = True #if number small light go
-            tilt=1
-        else:
-            red.value = False #if number big light no
-            tilt=0
-```
-THe first two lines just shorten the two sensors (the latter of which is obsolete now) into tiny variables for readability. The third line prints out all of the sensor variables for testing. The lines below simply light up an LED when its tilted sideways, which is a remnant of my older code that this is based on. I'm considering removing the LED and keeping just the variable itself.
-
-```python
+        tilt, deg = data(s) #calls function and gets variables
         t=time.monotonic()
         datalog.write(f"{t},{acc[0]},{acc[1]},{acc[2]},{tilt},{deg}\n") #the format of each line in the data table, using the better f string method
         led.value = True #blink when data is saved
@@ -78,15 +87,15 @@ THe first two lines just shorten the two sensors (the latter of which is obsolet
         datalog.flush()
         led.value = False 
 ```
-The final chunk starts with another shorthand variable, which I've already talked about. The second line is the line that takes all of the important output variables and copies them into the excel sheet from earlier. Then, it blinks the Pico's onboard LED for a specific amount of time, and then the loop repeats.
+The final chunk starts with calling the data function and another shorthand variable, both of which I've already talked about. The second line is the line that takes all of the important output variables and copies them into the excel sheet from earlier. Then, it blinks the Pico's onboard LED for a specific amount of time, and then the loop repeats.
 
 The final code file itself may end up looking different from this breakdown (more polished, probably,) but this is how the code works, regardless of how it looks later.
 
 # `Wiring`
-The initial wiring consisted of an LED, a switch, the battery, the gyroscope/accelerometer, and the altimeter. Then I cut the altimeter out because I anticipated that I would have gone insane trying to wire all of this together on the far-too-small PiCowbell, which is what we had to use. Despite my precautions, I still lost my mind. 
+The initial wiring consisted of an LED, a switch, the battery, the gyroscope/accelerometer, and the altimeter. Then I cut the altimeter out for numerous reasons, one of them being that trying to wire all of this together on the far-too-small PiCowbell would have been awful, which is what we had to use. Despite my precautions, I still lost my mind. 
 
 ## `Soldering`
-This subsection exists because I made one fatal error that would then waste almost two weeks of time; daring to be one of the first people in the class to solder headers onto the PiCowbell, instead of waiting for someone else to do it correctly and learning off of them. The PiCowbell is essentially a more compact and practical prototype shield, but it required soldering wires onto it as opposed to using jumper wires. My mistake was soldering headers onto nearly every pin in the workspace in the middle of the board, which, plus the power and ground sections as well as the ~40 headers that would connect the Pico to the PiCowbell, led to over 100 pins to solder and hours of sadness. Most of it was mindless busywork until I was then told that I didn't need to do all of that, because I could've just soldered wires straight onto the board.
+This subsection exists because I made one fatal error that would then waste almost two weeks of time: daring to be one of the first people in the class to solder headers onto the PiCowbell, instead of waiting for someone else to do it correctly and learning off of them. The PiCowbell is essentially a more compact and practical prototype shield, but it required soldering wires onto it as opposed to using jumper wires. My mistake was soldering headers onto nearly every pin in the workspace in the middle of the board, which, plus the power and ground sections as well as the ~40 headers that would connect the Pico to the PiCowbell, led to over 100 pins to solder and hours of sadness. Most of it was mindless busywork until I was then told that I didn't need to do all of that, because I could've just soldered wires straight onto the board.
 ![pain](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/21ddf961-2ba0-49b7-b36b-ea1d211d4dac)
 *Soldering normally is tedious. Soldering this many times is aggravating. Soldering this many times and then being told it was unnecessary is painful.*
 
@@ -112,9 +121,11 @@ This connects the top of the ballista to the pole. Not much to be said.
 This is the main part of the ballista, but since most of this is wood (the walls and base), I'll instead focus on the crank part.
 
 ![image-removebg-preview (2)](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/23ee0226-5aa1-4017-922d-45283397e355)
+
 *turret, with walls*
 
 ![image-removebg-preview (3)](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/603d9345-00cd-4175-8d62-db72ce1e2c6c)
+
 *turret, without walls*
 
 Ignoring the grey handle, which is a remnant of Troy wanting to be able to control it like a turret (which we are not allowed to do), this is the crank part. The orange handle can be turned to rotate the light grey pole in the middle, which will have a string connected to it. This will pull back a board that has the projectile on the other end, and when the crank is released, the board will get pulled forward again by some rubber stretch bands.
