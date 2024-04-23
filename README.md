@@ -91,12 +91,20 @@ This subsection exists because I made one fatal error that would then waste almo
 *Soldering normally is tedious. Soldering this many times is aggravating. Soldering this many times and then being told it was unnecessary is painful.*
 
 ## `Wiring, again`
-Despite the trauma of wasted time and effort, I tried to rescue this stupid PiCowbell in order to not have to solder anything ever again. The benefit of having all of these headers was
+Despite the trauma of wasted time and effort, I tried to rescue this stupid PiCowbell in order to not have to solder anything ever again. The benefit of having all of these headers (which is why I intended to do this from the start) was that I could reconfigure my wiring whenever I wanted, because nothing was set in stone. This was the moment I cut the altimeter out of the plan, because it didn't fit on the board. The wiring was mostly unproblematic, I wired it all up, tested it and it output numbers as intended. The next class, I went back to it and something was wrong, because the PiCo was audibly screaming at me. **Turns out I had the battery's (+) pin on a ground rail.** A few quick adjustments and it started to work again.
 
 # `Building A Prototype`
+### `The Base`
 The first part we (re)designed was the base, which was definitely the easiest part since it's designed to be built out of mostly wood.
-![image](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/e58101b2-1f77-4f62-8a5f-f6f8bbc4f855)
+![image](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/ca71f98c-4bd6-4103-8950-3c72db984624)
 
-The gold colored part in the middle (dubbed the "holder") is the only 3D-printed part, and the pole is metal. Everything else is wood, meaning that I didn't have to offset any of the slots that will connect them since we'll cut and sand them manually (probably), and we also likely wont need screws because the friction fits should be strong enough. The pole has space to rotate so we can turn the whole thingy without picking it up (and because Troy wanted to be able to control it like a machine gun turret, which is awesome)
+The gold colored part in the middle (dubbed the "holder") is the only 3D-printed part, and the pole is metal. Everything else is wood, meaning that I didn't have to offset any of the slots that will connect them since we'll cut and sand them manually (probably), and we also likely wont need screws because the friction fits should be strong enough. The pole has space to rotate so we can turn the whole thingy without picking it up (and because Troy wanted to be able to control it like a machine gun turret, which is awesome). The side without a support will be the front, because most of the turret's weight will be in the back, which has a longer support.
+
+### `The Block`
+The Block is really simple (and probably doesn't deserve its own section), but here it is.
+![image](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/ddebf2f8-2ab8-48fe-889d-49d2799e297e)
+
+This connects the top of the ballista to the pole. Not much to be said.
+
 
 
