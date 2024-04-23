@@ -91,7 +91,7 @@ This subsection exists because I made one fatal error that would then waste almo
 *Soldering normally is tedious. Soldering this many times is aggravating. Soldering this many times and then being told it was unnecessary is painful.*
 
 ## `Wiring, again`
-Despite the trauma of wasted time and effort, I tried to rescue this stupid PiCowbell in order to not have to solder anything ever again. The benefit of having all of these headers (which is why I intended to do this from the start) was that I could reconfigure my wiring whenever I wanted, because nothing was set in stone. This was the moment I cut the altimeter out of the plan, because it didn't fit on the board. The wiring was mostly unproblematic, I wired it all up, tested it and it output numbers as intended. The next class, I went back to it and something was wrong, because the PiCo was audibly screaming at me. **Turns out I had the battery's (+) pin on a ground rail.** A few quick adjustments and it started to work again.
+Despite the trauma of wasted time and effort, I tried to rescue this stupid PiCowbell in order to not have to solder anything ever again. The benefit of having all of these headers (which is why I intended to do this from the start, and continued post-dream-crushing) was that I could reconfigure my wiring whenever I wanted, because nothing was set in stone. This was the moment I cut the altimeter out of the plan, because it didn't fit on the board. The wiring was mostly unproblematic, I wired it all up, tested it and it output numbers as intended. The next class, I went back to it and something was wrong, because the PiCo was audibly screaming at me. **Turns out I had the battery's (+) pin on a ground rail.** A few quick adjustments and it started to work again.
 
 # `Building A Prototype`
 ### `The Base`
@@ -99,7 +99,7 @@ The first part we (re)designed was the base, which was definitely the easiest pa
 
 ![image-removebg-preview](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/70f99c92-d6f8-49c7-b646-60bfcd11c10b)
 
-The gold colored part in the middle (dubbed the "holder") is the only 3D-printed part, and the pole is metal. Everything else is wood, meaning that I didn't have to offset any of the slots that will connect them since we'll cut and sand them manually (probably), and we also likely wont need screws because the friction fits should be strong enough. The pole has space to rotate so we can turn the whole thingy without picking it up (and because Troy wanted to be able to control it like a machine gun turret, which is awesome). The side without a support will be the front, because most of the turret's weight will be in the back, which has a longer support.
+The gold colored part in the middle (dubbed the "holder") is the only 3D-printed part, and the pole is a PVC pipe. Everything else is wood, meaning that I didn't have to offset any of the slots that will connect them since we'll cut and sand them manually (probably), and we also likely wont need screws because the friction fits should be strong enough. The pole has space to rotate so we can turn the whole thingy without picking it up (and because Troy wanted to be able to control it like a machine gun turret, which is awesome). The side without a support will be the front, because most of the turret's weight will be in the back, which has a longer support.
 
 ### `The Block`
 The Block is really simple (and probably doesn't deserve its own section), but here it is.
@@ -108,5 +108,15 @@ The Block is really simple (and probably doesn't deserve its own section), but h
 
 This connects the top of the ballista to the pole. Not much to be said.
 
+### `The Turret'
+This is the main part of the ballista, but since most of this is wood (the walls and base), I'll instead focus on the crank part.
+
+![image-removebg-preview (2)](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/23ee0226-5aa1-4017-922d-45283397e355)
+*turret, with walls*
+
+![image-removebg-preview (3)](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/603d9345-00cd-4175-8d62-db72ce1e2c6c)
+*turret, without walls*
+
+Ignoring the grey handle, which is a remnant of Troy wanting to be able to control it like a turret (which we are not allowed to do), this is the crank part. The orange handle can be turned to rotate the light grey pole in the middle, which will have a string connected to it. This will pull back a board that has the projectile on the other end, and when the crank is released, the board will get pulled forward again by some rubber stretch bands.
 
 
