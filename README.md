@@ -96,13 +96,15 @@ Despite the trauma of wasted time and effort, I tried to rescue this stupid PiCo
 # `Building A Prototype`
 ### `The Base`
 The first part we (re)designed was the base, which was definitely the easiest part since it's designed to be built out of mostly wood.
-![image-removebg-preview (1)](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/98aa8b58-e8c3-47a2-9b38-378f5a312c6e)
+
+![image-removebg-preview](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/70f99c92-d6f8-49c7-b646-60bfcd11c10b)
 
 The gold colored part in the middle (dubbed the "holder") is the only 3D-printed part, and the pole is metal. Everything else is wood, meaning that I didn't have to offset any of the slots that will connect them since we'll cut and sand them manually (probably), and we also likely wont need screws because the friction fits should be strong enough. The pole has space to rotate so we can turn the whole thingy without picking it up (and because Troy wanted to be able to control it like a machine gun turret, which is awesome). The side without a support will be the front, because most of the turret's weight will be in the back, which has a longer support.
 
 ### `The Block`
 The Block is really simple (and probably doesn't deserve its own section), but here it is.
-![image-removebg-preview](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/70f99c92-d6f8-49c7-b646-60bfcd11c10b)
+
+![image-removebg-preview (1)](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/98aa8b58-e8c3-47a2-9b38-378f5a312c6e)
 
 This connects the top of the ballista to the pole. Not much to be said.
 
