@@ -3,10 +3,12 @@
 &nbsp;
 
 # `Table of Contents`
+* [Goal](#goal)
 * [Planning](#planning)
 * [Coding](#coding)
 * [Wiring](#wiring)
 * [Building A Prototype](#building_a_prototype)
+* [Problems](#problems)
 
 &nbsp;
 # `Goal`
