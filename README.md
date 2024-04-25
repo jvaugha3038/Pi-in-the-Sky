@@ -9,6 +9,9 @@
 * [Building A Prototype](#building_a_prototype)
 
 &nbsp;
+# `Goal`
+The goal of the project was to get the Pico into the air, somehow, and then collect useful data that can be retrieved. We chose to do so by launching it out of a ballista-style turret. We used a gyroscope/accelerometer to record data
+
 # `Planning`
 [Link to planning Document](https://docs.google.com/document/d/14-PHrZZvjooZSPuYYvAT_kGfdMwqDnR2ftNQUhQHIGQ/edit)
 
@@ -70,7 +73,7 @@ I also wanted to keep track of the height the payload was at, but the altimeter 
         purp.value = False #if number big light no
         tilt=0
 ```
-The first line just shortens the sensor name into a tiny variable for readability. The third line prints out all of the sensor variables for testing. The lines below simply light up an LED when its tilted sideways, which is a remnant of my older code that this is based on. I considered removing the LED and keeping just the variable itself, until I noticed that it was purple and I think its cool enough to keep.
+The first line just shortens the sensor name into a tiny variable for readability. The second line prints out all of the sensor variables for testing. The lines below simply light up an LED when its tilted sideways, which is a remnant of my older code that this is based on. I considered removing the LED and keeping just the variable itself, until I noticed that it was purple and I think its cool enough to keep.
 
 ```python
 with open("/data.csv", "a") as datalog: #the thing that allows the data to be Grabbed
@@ -92,6 +95,9 @@ The final chunk starts with calling the data function and another shorthand vari
 The final code file itself may end up looking different from this breakdown (more polished, probably,) but this is how the code works, regardless of how it looks later.
 
 # `Wiring`
+![image](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/05e19ca0-2158-42b5-8595-c7d7772389b9)
+*Wiring as seen on a breadboard. Neat and tidy.*
+
 The initial wiring consisted of an LED, a switch, the battery, the gyroscope/accelerometer, and the altimeter. Then I cut the altimeter out for numerous reasons, one of them being that trying to wire all of this together on the far-too-small PiCowbell would have been awful, which is what we had to use. Despite my precautions, I still lost my mind. 
 
 ## `Soldering`
@@ -100,7 +106,12 @@ This subsection exists because I made one fatal error that would then waste almo
 *Soldering normally is tedious. Soldering this many times is aggravating. Soldering this many times and then being told it was unnecessary is painful.*
 
 ## `Wiring, again`
-Despite the trauma of wasted time and effort, I tried to rescue this stupid PiCowbell in order to not have to solder anything ever again. The benefit of having all of these headers (which is why I intended to do this from the start, and continued post-dream-crushing) was that I could reconfigure my wiring whenever I wanted, because nothing was set in stone. This was the moment I cut the altimeter out of the plan, because it didn't fit on the board. The wiring was mostly unproblematic, I wired it all up, tested it and it output numbers as intended. The next class, I went back to it and something was wrong, because the PiCo was audibly screaming at me. **Turns out I had the battery's (+) pin on a ground rail.** A few quick adjustments and it started to work again.
+![20240425_134130](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/846c699a-84d4-4d0a-88e9-3b634214e4bb)
+*Wiring as seen on the PiCowbell. Not neat or tidy.*
+
+Despite the trauma of wasted time and effort, I tried to rescue this stupid PiCowbell in order to not have to solder anything ever again. The benefit of having all of these headers (which is why I intended to do this from the start, and continued post-dream-crushing) was that I could reconfigure my wiring whenever I wanted, because nothing was set in stone. This was the moment I cut the altimeter out of the plan, because it didn't fit on the board. The wiring was mostly unproblematic despite looking quite problematic. I wired it all up, tested it and it output numbers as intended. The next class, I went back to it and something was wrong, because the PiCo was audibly screaming at me. **Turns out I had the battery's (Switch) pin on a ground rail.** A few quick adjustments and it started to work again.
+
+The LED in this picture wasn't soldered by me, but the fact that its purple made up for how ugly it is. This picture was taken before the payload was printed, which is when I made the switch and LED better so they could fit into it.
 
 # `Building A Prototype`
 ### `The Base`
@@ -128,6 +139,6 @@ This is the main part of the ballista, but since most of this is wood (the walls
 
 *turret, without walls*
 
-Ignoring the grey handle, which is a remnant of Troy wanting to be able to control it like a turret (which we are not allowed to do), this is the crank part. The orange handle can be turned to rotate the light grey pole in the middle, which will have a string connected to it. This will pull back a board that has the projectile on the other end, and when the crank is released, the board will get pulled forward again by some rubber stretch bands.
+Ignoring the grey handle, which is a remnant of Troy wanting to be able to control it like a turret (which we are not allowed to do), this is the crank part. The orange handle can be turned to rotate the light grey pole in the middle, which will have a string connected to it. This will pull back a board that has the projectile on the other end, and when the crank is released, the board will get pulled forward again by some rubber stretch bands. Said board isn't in the Onshape document because the idea is we design it with the payload in mind.
 
-
+# `Problems`
