@@ -12,7 +12,7 @@
 
 &nbsp;
 # `Goal`
-The goal of the project was to get the Pico into the air, somehow, and then collect useful data that can be retrieved. We chose to do so by launching it out of a ballista-style turret. We used a gyroscope/accelerometer to record data
+The goal of the project was to get the Pico into the air, somehow, and then collect useful data that can be retrieved. We chose to do so by launching it out of a ballista-style turret. We used a gyroscope/accelerometer to record the payload's current angle, and it's acceleration.
 
 # `Planning`
 [Link to planning Document](https://docs.google.com/document/d/14-PHrZZvjooZSPuYYvAT_kGfdMwqDnR2ftNQUhQHIGQ/edit)
@@ -121,7 +121,7 @@ The first part we (re)designed was the base, which was definitely the easiest pa
 
 ![image-removebg-preview](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/70f99c92-d6f8-49c7-b646-60bfcd11c10b)
 
-The gold colored part in the middle (dubbed the "holder") is the only 3D-printed part, and the pole is a PVC pipe. Everything else is wood, meaning that I didn't have to offset any of the slots that will connect them since we'll cut and sand them manually (probably), and we also likely wont need screws because the friction fits should be strong enough. The pole has space to rotate so we can turn the whole thingy without picking it up (and because Troy wanted to be able to control it like a machine gun turret, which is awesome). The side without a support will be the front, because most of the turret's weight will be in the back, which has a longer support.
+The gold colored part in the middle (dubbed the "holder") is the only 3D-printed part, and the pole is a PVC pipe. Everything else is wood, meaning that I didn't have to offset any of the slots that will connect them since we'll cut and sand them manually (probably), and we also likely wont need screws because the friction fits should be strong enough. The pole has space to rotate so we can turn the whole thingy without picking it up (and because Troy wanted to be able to control it like a machine gun turret, which is both awesome and not allowed). The side without a support will be the front, because most of the turret's weight will be in the back, which has a longer support.
 
 ### `The Block`
 The Block is really simple (and probably doesn't deserve its own section), but here it is.
@@ -142,5 +142,15 @@ This is the main part of the ballista, but since most of this is wood (the walls
 *turret, without walls*
 
 Ignoring the grey handle, which is a remnant of Troy wanting to be able to control it like a turret (which we are not allowed to do), this is the crank part. The orange handle can be turned to rotate the light grey pole in the middle, which will have a string connected to it. This will pull back a board that has the projectile on the other end, and when the crank is released, the board will get pulled forward again by some rubber stretch bands. Said board isn't in the Onshape document because the idea is we design it with the payload in mind.
+
+### `The Payload`
+This thing holds the Pico and all of its wires nice and compact, so it doesn't explode on impact and so the wires (hopefully) don't get disconnected.
+
+![image-removebg-preview (4)](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/8616b7dc-2e93-4ddf-91b1-6ddae7320737)
+
+The holes on the side hold the LED and the switch, and the Pico is screwed into the bottom with the pins up so the PiCowbell can be connected. The little divit on the side is designed to perfectly fit the battery, and the holes above it are so the mpu6050 (gyroscope) can be secured with screws. That part didn't work, because the holes aren't perfectly aligned, but that's fine.
+
+![20240503_133534](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/d32a1662-6255-4ee2-87d7-692430a14973)
+![20240503_133459](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/5755f30f-5ba4-4221-83ae-1c3b8d244fb4)
 
 # `Problems`
