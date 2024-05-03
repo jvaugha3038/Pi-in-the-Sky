@@ -141,16 +141,20 @@ This is the main part of the ballista, but since most of this is wood (the walls
 
 *turret, without walls*
 
-Ignoring the grey handle, which is a remnant of Troy wanting to be able to control it like a turret (which we are not allowed to do), this is the crank part. The orange handle can be turned to rotate the light grey pole in the middle, which will have a string connected to it. This will pull back a board that has the projectile on the other end, and when the crank is released, the board will get pulled forward again by some rubber stretch bands. Said board isn't in the Onshape document because the idea is we design it with the payload in mind.
+Ignoring the grey handle, which is a remnant of Troy wanting to be able to control it like a turret (which we are, again, not allowed to do), this is the crank part. The orange handle can be turned to rotate the light grey pole in the middle, which will have a string connected to it. This will pull back a board that has the projectile on the other end, and when the crank is released, the board will get pulled forward again by some rubber stretch bands. Said board isn't in the Onshape document because the idea is we design it with the payload in mind.
 
 ### `The Payload`
 This thing holds the Pico and all of its wires nice and compact, so it doesn't explode on impact and so the wires (hopefully) don't get disconnected.
 
 ![image-removebg-preview (4)](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/8616b7dc-2e93-4ddf-91b1-6ddae7320737)
 
-The holes on the side hold the LED and the switch, and the Pico is screwed into the bottom with the pins up so the PiCowbell can be connected. The little divit on the side is designed to perfectly fit the battery, and the holes above it are so the mpu6050 (gyroscope) can be secured with screws. That part didn't work, because the holes aren't perfectly aligned, but that's fine.
+The holes on the side hold the LED and the switch, and the Pico is screwed into the bottom with the pins up so the PiCowbell can be connected. The little divit on the side is designed to perfectly fit the battery, and the holes above it are so the mpu6050 (gyroscope) can be secured with screws. That part didn't work, because the holes aren't perfectly aligned, but that's fine. Basically, this thing is gonna be surrounded in styrofoam 
 
 ![20240503_133534](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/d32a1662-6255-4ee2-87d7-692430a14973)
 ![20240503_133459](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/5755f30f-5ba4-4221-83ae-1c3b8d244fb4)
+*This was a complete nightmare to design since I couldnt find an onshape model for the picowbell or mpu6050 in the CHS folder. It was so worth it though. This thing looks sick. You can barely even SEE the battery in there.*
 
 # `Problems`
+### `Big Problems`
+
+### `Smaller Problems`
