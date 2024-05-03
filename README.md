@@ -7,8 +7,11 @@
 * [Planning](#planning)
 * [Coding](#coding)
 * [Wiring](#wiring)
-* [Building A Prototype](#building_a_prototype)
+* [The Design](#the_design)
+* [Building](#building)
+* [Launch and Data](#launch_and_data)
 * [Problems](#problems)
+* [Reflection](#reflection)
 
 &nbsp;
 # `Goal`
@@ -115,7 +118,7 @@ Despite the trauma of wasted time and effort, I tried to rescue this stupid PiCo
 
 The LED in this picture wasn't soldered by me, but the fact that its purple made up for how ugly it is. This picture was taken before the payload was printed, which is when I made the switch and LED better so they could fit into it.
 
-# `Building A Prototype`
+# `The Design`
 ### `The Base`
 The first part we (re)designed was the base, which was definitely the easiest part since it's designed to be built out of mostly wood.
 
@@ -148,13 +151,21 @@ This thing holds the Pico and all of its wires nice and compact, so it doesn't e
 
 ![image-removebg-preview (4)](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/8616b7dc-2e93-4ddf-91b1-6ddae7320737)
 
-The holes on the side hold the LED and the switch, and the Pico is screwed into the bottom with the pins up so the PiCowbell can be connected. The little divit on the side is designed to perfectly fit the battery, and the holes above it are so the mpu6050 (gyroscope) can be secured with screws. That part didn't work, because the holes aren't perfectly aligned, but that's fine. Basically, this thing is gonna be surrounded in styrofoam 
+The holes on the side hold the LED and the switch, and the Pico is screwed into the bottom with the pins up so the PiCowbell can be connected. The little divit on the side is designed to perfectly fit the battery, and the holes above it are so the mpu6050 (gyroscope) can be secured with screws. That part didn't work, because the holes aren't perfectly aligned, but that's fine. Basically, this thing is gonna be surrounded in styrofoam, and we're gonna launch a styrofoam block.
 
 ![20240503_133534](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/d32a1662-6255-4ee2-87d7-692430a14973)
 ![20240503_133459](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/5755f30f-5ba4-4221-83ae-1c3b8d244fb4)
 *This was a complete nightmare to design since I couldnt find an onshape model for the picowbell or mpu6050 in the CHS folder. It was so worth it though. This thing looks sick. You can barely even SEE the battery in there.*
 
+# `Building`
+
+# `Launch and Data`
+
 # `Problems`
 ### `Big Problems`
-
+* 
+  
 ### `Smaller Problems`
+* 
+  
+# `Reflection`
