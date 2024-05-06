@@ -163,8 +163,14 @@ The holes on the side hold the LED and the switch, and the Pico is screwed into 
 
 # `Problems`
 ### `Big Problems`
-* 
-  
+* The altimeter, and all of the pain it wanted to cause
+    * Simply choose to not use an altimeter anymore.
+* The part connecting the top to the base of the ballista had two joints.
+  ![image](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/fe1dfd6b-490c-4936-bbf4-7373ff164127)
+
+    * This was the first real design for the "block" part, in which it was actually two parts. Those mostly transparent pieces would have holes in them, so you could push a rod or something through it and into one of the 5 holes on the grey block (making the sketch of the grey part successfully mirror itself to the other side was half of the battle, but thats irrelevant). I noticed this horrible and redundant design flaw after designing it, and then immediately sought to fix it. I created a better design that removed those see-through parts and essentially combined them with the blue part. However, connecting the grey part to that was not a problem I wanted to bother solving, so I scrapped that one and made the current block design: a blue block that just doesn't rotate at all.
+* [Soldering.](#soldering)
+
 ### `Smaller Problems`
 * 
   
