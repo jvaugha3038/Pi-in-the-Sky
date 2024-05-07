@@ -15,7 +15,7 @@
 
 &nbsp;
 # `Goal`
-The goal of the project was to get the Pico into the air, somehow, and then collect useful data that can be retrieved. We chose to do so by launching it out of a ballista-style turret. We used a gyroscope/accelerometer to record the payload's current angle, and it's acceleration.
+The goal of the project was to get the Pico into the air, somehow, and then collect useful data that can be retrieved. We chose to do so by launching it out of a ballista-style turret. We used a gyroscope/accelerometer to record the payload's current angle, and it's angular acceleration.
 
 # `Planning`
 [Link to planning Document](https://docs.google.com/document/d/14-PHrZZvjooZSPuYYvAT_kGfdMwqDnR2ftNQUhQHIGQ/edit)
@@ -23,7 +23,7 @@ The goal of the project was to get the Pico into the air, somehow, and then coll
 The plans changed quite frequently, as we found some designs better than others, or decided to scrap some ideas entirely, but I'll get into that in relevant sections.
 
 # `Coding`
-The main idea for our design was partially based on the fact that neither of us either excelled at code or wanted to be the one to write it all, so we made sure the code was almost entirely comprised of things we knew how to do. By that I mean that the project code is essentially an altered version of my code for a previous assignment. I'll go through it in chunks.
+The main idea for our design was partially based on the fact that neither of us excelled at code nor wanted to be the one to write it all, so we made sure the code was almost entirely comprised of things we knew how to do. By that I mean that the project code is essentially an altered version of my code for a previous assignment. I'll go through it in chunks.
 
 ```python
 #type:ignore
