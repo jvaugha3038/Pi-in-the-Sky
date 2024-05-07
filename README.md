@@ -133,7 +133,7 @@ The Block is really simple (and probably doesn't deserve its own section), but h
 
 This connects the top of the ballista to the pole. Not much to be said.
 
-### `The Top'
+### `The Top`
 This is the main part of the ballista, but since most of this is wood (the walls and base), I'll instead focus on the crank part.
 
 ![image-removebg-preview (2)](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/23ee0226-5aa1-4017-922d-45283397e355)
@@ -172,9 +172,10 @@ The holes on the side hold the LED and the switch, and the Pico is screwed into 
     * This was the first real design for the "block" part, in which it was actually two parts. Those mostly transparent pieces would have holes in them, so you could push a rod or something through it and into one of the 5 holes on the grey block (making the sketch of the grey part successfully mirror itself to the other side was half of the battle, but thats irrelevant). I noticed this horrible and redundant design flaw after designing it, and then immediately sought to fix it. I created a better design that removed those see-through parts and essentially combined them with the blue part. However, connecting the grey part to that was not a problem I wanted to bother solving, so I scrapped that one too and made the current block design: a blue block that just doesn't rotate at all.
 * [Soldering.](#soldering)
 * Github didn't want to connect to VSCode.
-    * I don't even know what was going on. I just gave up and downloaded the file and put it here, so I can't actually push changes to github without doing that again.
+    * I don't even know what was going on. I heard it was something to do with Securly blocking some part of Github that likely didn't need to be blocked at all (thanks CHS). I just gave up and downloaded the file and put it here, so I can't actually push changes to github without doing that again.
 * TIME.
     * So many time-based problems. Troy is a senior, so he leaves in late May, essentially meaning we're done for if we don't at least launch it once before then. Both of us were part of this out-of-school engineering ethics collaboration between us, UVA, and Hampton university, so we missed 2 days for that. We are in completely different AP exams, so we're rarely able to work together in May. If this thing breaks before the launch we are completely ruined, because rebuilding this wooden turret is just simply not going to happen.
+
 ### `Smaller Problems`
 * Using the heat gun and heat-shrink wrap.
     * This one is a skill issue. I apparently don't know what I'm doing. The only reason it's there is because I didn't like the exposed metal on the LED wires, which it does technically cover, but it can slide up and down on the wire which is probably not good.
