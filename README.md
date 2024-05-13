@@ -176,7 +176,8 @@ The holes on the side hold the LED and the switch, and the Pico is screwed into 
     * I don't even know what was going on. I heard it was something to do with Securly blocking some part of Github that likely didn't need to be blocked at all (thanks CHS). I just gave up and downloaded the file and put it here, so I can't actually push changes to github without doing that again.
 * ***TIME.***
     * So many time-based problems. Troy is a senior, so he leaves in late May, essentially meaning we're done for if we don't at least launch it once before then. Both of us were part of this out-of-school engineering ethics collaboration between us, UVA, and Hampton university, so we missed 2 days for that. We are in completely different AP exams, so we're rarely able to work together in May. If this thing breaks before the launch we are completely ruined, because rebuilding this wooden turret is just simply not going to happen.
-
+* **The code section that's meant to keep track of degrees was very inconsistent.**
+    * 
 ### `Smaller Problems`
 * **Using the heat gun and heat-shrink wrap.**
     * This one is a skill issue. I apparently don't know what I'm doing. The only reason it's there is because I didn't like the exposed metal on the LED wires, which it does technically cover, but it can slide up and down on the wire which is probably not good.
