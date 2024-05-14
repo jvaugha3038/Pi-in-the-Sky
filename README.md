@@ -12,7 +12,7 @@
 * [Launch and Data](#launch_and_data)
 * [Problems](#problems)
 * [Reflection](#reflection)
-
+---
 &nbsp;
 # `Goal`
 The goal of the project was to get the Pico into the air, somehow, and then collect useful data that can be retrieved. We chose to do so by launching it out of a ballista-style turret. We used a gyroscope/accelerometer to record the payload's current angle, and it's angular acceleration.
