@@ -159,6 +159,8 @@ The holes on the side hold the LED and the switch, and the Pico is screwed into 
 
 # `Building`
 
+
+
 # `Launch and Data`
 Well, the launch looked nice. It went farther than we expected it to, but I don't have much else to say about it.
 
@@ -166,13 +168,19 @@ https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/43502e3a-93a7-4754
 
 *(Recorded by River. I had to trim, speed up, and mute this video to get it to under 10MB so I could put it here.)*
 
-A notable problem was that when I went to check the data file, I noticed that it didn't actually exist on the Pico. And neither did the code. I assume that the reset button on the Pico got pressed, or something else happened on impact. Why did this happen? No idea. So to make up for that lost data, I "relaunched the payload" (threw it lightly) in a "safer environment" (inside). I was also told not to relaunch it normally, which I didn't want to anyway.
+A notable problem was that when I went to check the data file, I noticed that it didn't actually exist on the Pico. And neither did the code. I assume that the reset button on the Pico got pressed, or something else happened on impact, despite no visible damage being done to the payload. Why did this happen? No idea. So to make up for that lost data, I "relaunched the payload" (threw it lightly) in a "safer environment" (inside). I was also told not to relaunch it normally, which I didn't want to anyway. I'm not sure if I can even pick up the whole turret by myself.
 
-All of the data can be found as individual files in the repository, because I'm not going to put 4 big pictures here in a row.
-[X, Y, and Z Accel.](raspberry-pi/temp.py)
-[Angle](raspberry-pi/temp.py)
-[Tilt Alarm](raspberry-pi/temp.py)
-[X, Y, and Z Accel. (Radar Chart)](raspberry-pi/temp.py)
+Here's all of the data:
+![X, Y, and Z Acceleration of the Pico (1)](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/6fc88663-489f-4ce5-8edb-96661ed7999a)
+![Angle (1)](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/e963fc4d-b5f0-42a1-86e3-f00e665a861e)
+![Tilt Alarm (2)](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/735dcf46-c8b8-4e11-8711-87d9421906ce)
+![X, Y, and Z Acceleration of the Pico (Radar Chart)](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/64367552-50c5-4528-b355-f94d97beb00a)
+
+And here's a funny video of it not working at all during a test:
+
+https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/d0868628-e019-427f-a857-3de7d20a21e1
+
+
 
 # `Problems`
 ### `Big Problems`
@@ -188,7 +196,7 @@ All of the data can be found as individual files in the repository, because I'm 
 * **Github didn't want to connect to VSCode.**
     * I don't even know what was going on. I heard it was something to do with Securly blocking some part of Github that likely didn't need to be blocked at all (thanks CHS). I just gave up and downloaded the file and put it here, so I can't actually push changes to github without doing that again.
 * ***TIME.***
-    * So many time-based problems. Troy is a senior, so he leaves in late May, essentially meaning we're done for if we don't at least launch it once before then. Both of us were part of this out-of-school engineering ethics collaboration between us, UVA, and Hampton university, so we missed 2 days for that. We are in completely different AP exams, so we're rarely able to work together in May. If this thing breaks before the launch we are completely ruined, because rebuilding this wooden turret is just simply not going to happen.
+    * So many time-based problems. Troy is a senior, so he left in late May, essentially meaning we would've been done for if we didn't at least launch it once before then. Both of us were part of this out-of-school engineering ethics collaboration between us, UVA, and Hampton university, so we missed 2 days for that. We are in completely different AP exams, so we were rarely able to work together in May. If this thing broke before the launch we would've been completely ruined, because rebuilding this wooden turret is just simply not going to happen.
 * **The code section that's meant to keep track of degrees was very inconsistent.**
     * I think the problem lies in how fast the gyroscope is being moved compared to how fast the degrees variable is updated in the code, as in if the gyroscope is being rotated too fast, it loses track of where it is because the code is running at a certain speed and it ends up either underthe correct value or severely overshooting it. I tried a system that would dynamically keep track of the time between cycles and use that time in the calculations, but that just made it stay at one value. I really don't know why this is happening. I managed to fix it (to the point of being acceptable) by reformatting the line of code, because apparently I messed up the parentheses when I grabbed it from my project last year, but maybe I'm just coping and that didn't change anything at all.
 
@@ -200,3 +208,4 @@ All of the data can be found as individual files in the repository, because I'm 
 * **[The data from the launch disappeared.](#launch_and_data)**
 
 # `Reflection`
+
