@@ -168,7 +168,12 @@ https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/43502e3a-93a7-4754
 
 A notable problem was that when I went to check the data file, I noticed that it didn't actually exist on the Pico. And neither did the code. I assume that the reset button on the Pico got pressed, or something else happened on impact. Why did this happen? No idea. So to make up for that lost data, I "relaunched the payload" (threw it lightly) in a "safer environment" (inside). I was also told not to relaunch it normally, which I didn't want to anyway.
 
-All of the data can be found in this folder, because I'm not going to put 5 pictures here in a row.
+All of the data can be found as individual files in the repository, because I'm not going to put 4 big pictures here in a row.
+[X, Y, and Z Accel.](raspberry-pi/temp.py)
+[Angle](raspberry-pi/temp.py)
+[Tilt Alarm](raspberry-pi/temp.py)
+[X, Y, and Z Accel. (Radar Chart)](raspberry-pi/temp.py)
+
 # `Problems`
 ### `Big Problems`
 * **The altimeter, and all of the pain it wanted to cause.**
