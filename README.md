@@ -160,7 +160,15 @@ The holes on the side hold the LED and the switch, and the Pico is screwed into 
 # `Building`
 
 # `Launch and Data`
+Well, the launch looked nice. It went farther than we expected it to, but I don't have much else to say about it.
 
+https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/43502e3a-93a7-4754-90f7-3c586eb5056d
+
+*(Recorded by River. I had to trim, speed up, and mute this video to get it to under 10MB so I could put it here.)*
+
+A notable problem was that when I went to check the data file, I noticed that it didn't actually exist on the Pico. And neither did the code. I assume that the reset button on the Pico got pressed, or something else happened on impact. Why did this happen? No idea. So to make up for that lost data, I "relaunched the payload" (threw it lightly) in a "safer environment" (inside). I was also told not to relaunch it normally, which I didn't want to anyway.
+
+All of the data can be found in this folder, because I'm not going to put 5 pictures here in a row.
 # `Problems`
 ### `Big Problems`
 * **The altimeter, and all of the pain it wanted to cause.**
@@ -178,8 +186,12 @@ The holes on the side hold the LED and the switch, and the Pico is screwed into 
     * So many time-based problems. Troy is a senior, so he leaves in late May, essentially meaning we're done for if we don't at least launch it once before then. Both of us were part of this out-of-school engineering ethics collaboration between us, UVA, and Hampton university, so we missed 2 days for that. We are in completely different AP exams, so we're rarely able to work together in May. If this thing breaks before the launch we are completely ruined, because rebuilding this wooden turret is just simply not going to happen.
 * **The code section that's meant to keep track of degrees was very inconsistent.**
     * I think the problem lies in how fast the gyroscope is being moved compared to how fast the degrees variable is updated in the code, as in if the gyroscope is being rotated too fast, it loses track of where it is because the code is running at a certain speed and it ends up either underthe correct value or severely overshooting it. I tried a system that would dynamically keep track of the time between cycles and use that time in the calculations, but that just made it stay at one value. I really don't know why this is happening. I managed to fix it (to the point of being acceptable) by reformatting the line of code, because apparently I messed up the parentheses when I grabbed it from my project last year, but maybe I'm just coping and that didn't change anything at all.
+
 ### `Smaller Problems`
 * **Using the heat gun and heat-shrink wrap.**
     * This one is a skill issue. I apparently don't know what I'm doing. The only reason it's there is because I didn't like the exposed metal on the LED wires, which it does technically cover, but it can slide up and down on the wire which is probably not good.
-  
+* **The stretch bands almost snapped while we were testing it.**
+    * If it didn't break then it doesn't matter.
+* **[The data from the launch disappeared.](#launch_and_data)**
+
 # `Reflection`
