@@ -15,7 +15,7 @@
 ---
 &nbsp;
 # `Goal`
-The goal of the project was to get the Pico into the air, somehow, and then collect useful data that can be retrieved. We chose to do so by launching it out of a ballista-style turret. We used a gyroscope/accelerometer to record the payload's current angle, and it's angular acceleration.
+The goal of the project was to get the Pico into the air, somehow, and then collect useful data that can be retrieved. We chose to do so by launching it out of a ballista-style turret, otherwise known as a "payload delivery device". We used a gyroscope/accelerometer to record the payload's current angle, and it's angular acceleration.
 
 # `Planning`
 [Link to planning Document](https://docs.google.com/document/d/14-PHrZZvjooZSPuYYvAT_kGfdMwqDnR2ftNQUhQHIGQ/edit)
@@ -158,8 +158,9 @@ The holes on the side hold the LED and the switch, and the Pico is screwed into 
 *This was a complete nightmare to design since I couldnt find an onshape model for the picowbell or mpu6050 in the CHS folder. It was so worth it though. This thing looks sick. You can barely even SEE the battery in there.*
 
 # `Building`
-
-
+-
+-
+-
 
 # `Launch and Data`
 Well, the launch looked nice. It went farther than we expected it to, but I don't have much else to say about it.
@@ -208,4 +209,4 @@ https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/d0868628-e019-427f
 * **[The data from the launch disappeared.](#launch_and_data)**
 
 # `Reflection`
-Overall this project was a fun and interesting build to make. IT had several downsides to the problems we did not think we could fix as a team but we grinded out solution after solution finding ways where we thought we might have to rethink our project from having several failures to launch to having problems finding enough wood to be able to support our project all together. This project took over 4 months to create from finding proper screws to use and being able to find proper  angles to cut wood at to be able to support the base that we created. Our overall biggest problem was figuring out the launching phase cause our projectiles were going only so far. In the end, we figured out it was our pull system that Troy had created it was slowing the projectiles down tremendously. But Jaden figured out quickly that if we convert it to a system where we rotate the pin and then yank it out of the hole it would reduce the amount of energy lost and create a better launch so the balls would go further. Overall this build was very fun to build and we keep getting told it is not a touret or a ballista it is a (Payload delivery system). If we could change one thing about this project it would be the amount of time because if we were allowed more time we would be able to make the machine shoot way further. But we would not change anything else. Overall A good way to end the school year with a litteral bang.
+This project was a fun and interesting build to make. It had several problems we didn't think we could fix as a team but we grinded out solution after solution finding ways where we thought we might have to rethink our project, from having several launch failures, to almost running out of wood to build the thing with. This project took over 4 months to create from finding proper screws to use and being able to find proper angles to cut wood at to be able to support the base that we created. Our overall biggest problem was figuring out the launching phase cause our projectiles were going only so far. A lot of this came down to a very questionable amount of planning. In the end, we figured out it was our pull system that Troy had created it was slowing the projectiles down tremendously. But we figured out quickly that if we convert it to a system where we rotate the pin and then yank it out of the hole it would reduce the amount of energy lost and create a better launch so the payload would go further. Overall, this project was very fun to build and we keep getting told it is not a turret or a ballista it is a (Payload delivery system). If we could change one thing about this project it would be the amount of time, because if we were allowed more time we would be able to make the machine shoot way further. But we would not change anything else. Overall, a good way to end the school year with a literal bang.
