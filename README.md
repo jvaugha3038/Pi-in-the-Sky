@@ -9,7 +9,7 @@
 * [Wiring](#wiring)
 * [The Design](#the_design)
 * [Building](#building)
-* [Launch and Data](#launch_and_data)
+* [Launch and Data](#launch/data)
 * [Problems](#problems)
 * [Reflection](#reflection)
 ---
@@ -162,7 +162,7 @@ The holes on the side hold the LED and the switch, and the Pico is screwed into 
 -
 -
 
-# `Launch and Data`
+# `Launch/Data`
 Well, the launch looked nice. It went farther than we expected it to, but I don't have much else to say about it.
 
 https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/43502e3a-93a7-4754-90f7-3c586eb5056d
@@ -181,7 +181,7 @@ This chart shows how fast the payload was rotating at any given time. The way th
 -----
 ![Angle (1)](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/e963fc4d-b5f0-42a1-86e3-f00e665a861e)
 -----
-This chart shows the angle that the payload was at at any given time, and the most notable thing here is how perfectly it showcases the problem with tracking the degrees in the code. I'm not sure how it could've gotten so far into the negative.
+This chart shows the angle that the payload was at at any given time, and the most notable thing here is how perfectly it showcases the problem with tracking the degrees in the code. I'm not sure how it could've gotten so far into the negative, and on top of that it didn't even start at 0 degrees even though I coded it to do that.
 
 -----
 ![Tilt Alarm (2)](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/735dcf46-c8b8-4e11-8711-87d9421906ce)
