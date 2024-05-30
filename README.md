@@ -171,12 +171,25 @@ https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/43502e3a-93a7-4754
 
 A notable problem was that when I went to check the data file, I noticed that it didn't actually exist on the Pico. And neither did the code. I assume that the reset button on the Pico got pressed, or something else happened on impact, despite no visible damage being done to the payload. Why did this happen? No idea. So to make up for that lost data, I "relaunched the payload" (threw it lightly) in a "safer environment" (inside). I was also told not to relaunch it normally, which I didn't want to anyway. I'm not sure if I can even pick up the whole turret by myself.
 
+Another notable problem was that the throw didn't record data either, or so I thought. All of that throw's data, as well as some other miscellaneous test data, was apparently on some other copy of the same data file. That means that I'm not even sure what this data is, and it could even be the launch data for all I know (unlikely, but) regardless of the origin, there is enough data in this sample to be analyzed.
+
 Here's all of the data:
 ![X, Y, and Z Acceleration of the Pico (1)](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/6fc88663-489f-4ce5-8edb-96661ed7999a)
+-----
+This chart shows how fast the payload was rotating at any given time. The way the payload was aligned, the X-acceleration would be tilting to the side (roll), the Y-acceleration would be tilting forward and backward (pitch), and the Z-acceleration would be spinning (yaw). Notably, we can see here that between about 43 and 61 seconds, the payload wasn't moving at all, and was then moved very sharply immediately after that.
+-----
 ![Angle (1)](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/e963fc4d-b5f0-42a1-86e3-f00e665a861e)
+-----
+This chart shows the angle that the payload was at at any given time, and the most notable thing here is how perfectly it showcases the problem with tracking the degrees in the code. I'm not sure how it could've gotten so far into the negative.
+-----
 ![Tilt Alarm (2)](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/735dcf46-c8b8-4e11-8711-87d9421906ce)
+-----
+This chart just shows the times at which the payload is on any of it's sides besides the bottom. On it's own, not super useful, but it's simplicity makes it a lot more readable than the more helpful charts. In tandem with the angle chart, it shows how stupid the degrees tracking is.
+-----
 ![X, Y, and Z Acceleration of the Pico (Radar Chart)](https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/64367552-50c5-4528-b355-f94d97beb00a)
-
+-----
+This chart actually has no reason to exist, but I made a promise to myself earlier that I'd use a radar chart somehow, so here's the same data found in the first chart but in an infinitely worse format.
+-----
 And here's a funny video of it not working at all during a test:
 
 https://github.com/jvaugha3038/Pi-in-the-Sky/assets/112961338/d0868628-e019-427f-a857-3de7d20a21e1
