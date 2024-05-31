@@ -158,9 +158,9 @@ The holes on the side hold the LED and the switch, and the Pico is screwed into 
 *This was a complete nightmare to design since I couldnt find an onshape model for the picowbell or mpu6050 in the CHS folder. It was so worth it though. This thing looks sick. You can barely even SEE the battery in there.*
 
 # `Building`
--
--
--
+To start this off, I wasn't actually watching Troy build the turret, so this will be a rough account of what happened. Also, I don't have the picture of the completed thing, but that can be found in the launch video.
+
+The first problem was just how big the build should be, since we modeled it in a way that meant we could shrink it depending on the payload, and we didn't have any set size for the payload yet. We settled on just making it big. That meant we needed a lot of wood, which was also another problem since a lot of the wood we had available was either too thin, not long enough, or bent. Cutting the wood was also time-consuming, since there was only so much Troy could do at a time before we needed the tablesaw, which we weren't allowed to use. Also, figuring out how to correctly cut the slanted supports was troublesome, and then putting it all together with wood screws was fine. Once that was done and the base was built, the next part was building the top part, which took even more time because it was far more complex. The woodcutting was the same struggles as before, but then we needed to figure out how to make the crank system. We settled on having a string attached to the end of the crank so we could stand farther away from it while it was launching, and using stretch bands for the launch. The cranks system we actually launched with was created about 2 minutes after we watched a whiffleball gets launched at snail's pace and land about four inches from the turret, where we just yanked the crank handle out, because the string method was incredibly weak.
 
 # `Launch/Data`
 Well, the launch looked nice. It went farther than we expected it to, but I don't have much else to say about it.
